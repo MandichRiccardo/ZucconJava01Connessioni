@@ -21,7 +21,5 @@ public class SimpleClient {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-
-
     }
 }
