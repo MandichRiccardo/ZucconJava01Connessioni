@@ -10,8 +10,9 @@ public class SimpleClient {
     public static void main(String[] args) {
         try {
             Socket cli = new Socket("127.0.0.1", 8080);
-
+            System.out.println("prima di inputstream");
             InputStream in = cli.getInputStream();
+            System.out.println("prima di bufferreader");
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
             System.out.println("risposta del server: "+ br.readLine());
 
